@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Civgen</title>
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+    <script src="/js/index.js"></script>
+    <section id="top"></section>
+<!--Title-->
+    <h1 class="title">CIVGEN</h1>
+     <p class="paragraf">web untuk menghitung luas, keliling, dan volume dari objek dasar</p>
+<!--Header / Navbar-->
+<header>
+    <nav>
+        <div class="pilihan">
+            <a href="#Triangle" class="pilihan-triangle">Segitiga</a>
+            <a href="#Jajargenjang" class="pilihan-jajargenjang">Jajar Genjang</a>
+            <a href="#Tabung" class="pilihan-tabung">Tabung</a>
+        </ul>
+    </nav>
+</header>
+<!--Main Page-->
+<main>
+<!--segitiga-->
+    <section id="Triangle">
+    <div class="card">
+    <div>
+        <h1>luas Segitiga</h1>
+    </div>
+ 
+    <img src="/assets/luassegitigaacad.jpg" alt="" width="800" height="800" >
+
+    <div>
+        <h3>Dengan:</h3>
+        <p>L = Luas</p>
+        <p>a = Panjang Alas</p>
+        <p>t = Tinggi Segitiga</p>
+
+    </div>
+<!--hitung luas segitiga-->
+    <div class ="form-hitung">
+        <h1>Hitung luas Segitiga</h1>
+        <form onsubmit="return triangle_area" action="" class="form-triangle" id="triangle_area">
+            <br>
+            <label> a </label>
+            <input id ="a" name ="a" type="number">
+            <label> t </label>
+            <input id ="t" name ="t" type="number">
+            <button type="submit" onclick="return triangle_area()">calculate</button>
+            <br>
+            <span> <span class="resultjj"></span> luas segitiga = <span id="result-triangle-area"> </span></span>
+            <br>
+        </form>
+        <button type="reset" class="reset-button" onclick="reset1()">reset</button>
+        <br>
+        <br>
+        <a href="#Top" class="reset-button">back to top</a>
+    </div>
+    </div>
+
+    <div class="card">
+    <div>
+        <h1>keliling Segitiga</h1>
+    </div>
+
+    <img src="/assets/kelilingsegitigaacad.png" alt="" width="800" height="800" >
+
+    <div>
+        <h3>Dengan:</h3>
+        <p>K = keliling Segitiga</p>
+        <p>S = sisi 1</p>
+        <p>S = sisi 2</p>
+        <p>S = sisi 3</p>
+    </div>
+
+
+<!--hitung keliling segitiga-->
+    <div class ="form-hitung">
+        <h1>Hitung keliling Segitiga</h1>
+        <form onsubmit="return triangle_around" action="" class="form-triangle" id="triangle_around">
+            <br>
+            <label> S1 </label>
+            <input id ="s1" name ="s1" type="number">
+            <label> S2 </label>
+            <input id ="s2" name ="s2" type="number">
+            <label> S3 </label>
+            <input id ="s3" name ="s3" type="number">
+            <button type="submit" onclick="return triangle_around()">calculate</button>
+            <br>
+            <span> keliling segitiga = <span id="result-triangle-around"> </span></span>
+            <br>
+        </form>
+        <button type="reset" class="reset-button" onclick="reset2()">reset</button>
+        <br>
+        <br>
+        <a href="#Top" class="reset-button">back to top</a>
+    </div>
+    </div>
+    </section>
+
+<!--jajargenjang-->
+<section id="Jajargenjang">
+        <div class="card">
+        <div>
+            <h1>Luas Jajar Genjang</h1>
+        </div>
+        <img src="/assets/luasjajargenjangacad.png" alt="" width="800" height="500">
+        <div>
+            <h3>Dengan:</h3>
+            <p>L = Luas Jajar Genjang</p>
+            <p>a = Panjang Alas</p>
+            <p>t = Tinggi</p>
+        </div>
+<!--hitung luas jajargenjang-->
+<div class ="form-hitung">
+    <h1>Hitung luas jajargenjang</h1>
+    <form onsubmit="return parallel_area" action="" class="form-triangle" id="parallel_area">
+        <br>
+        <label> a </label>
+        <input id ="ap" name ="ap" type="number">
+        <label> t </label>
+        <input id ="tp" name ="tp" type="number">
+        <button type="submit" onclick="return parallel_area()">calculate</button>
+        <br>
+        <span> luas jajargenjang =<span id="result-parallel-area" span class="resultjj"> </span></span>
+        <br>
+    </form>
+    <button type="reset" class="reset-button" onclick="reset3()">reset</button>
+    <br>
+    <br>
+    <a href="#Top" class="reset-button">back to top</a>
+</div>
+</div>
+<div class="card">
+<div>
+    <h1>Keliling Jajar Genjang</h1>
+</div>
+<img src="/assets/kelilingjajargenjangacad.png" alt="" width="800" height="500">
+<div>
+    <h3>Dengan:</h3>
+    <p>K = Keliling Jajar Genjang</p>
+    <p>a = Panjang Alas</p>
+    <p>b = Panjang Sisi Miring</p>
+</div>
+<!--hitung keliling jajargenjang-->
+<div class ="form-hitung">
+<h1>Hitung keliling jajargenjang</h1>
+<form onsubmit="return parallel_around" action="" class="form-triangle" id="parallel_around">
+    <br>
+    <label> a </label>
+<input id ="ap1" name ="ap1" type="number">
+<label> b </label>
+<input id ="bp" name ="bp" type="number">
+<button type="submit" onclick="return parallel_around()">calculate</button>
+<br>
+<span> keliling jajargenjang = <span id="result-parallel-around" span class="resultjj"> </span></span>
+<br>
+</form>
+<button type="reset" class="reset-button" onclick="reset4()">reset</button>
+<br>
+<br>
+<a href="#Top" class="reset-button">back to top</a>
+</div>
+</div>
+</section>
+<!--tabung-->
+<section id="Tabung">
+    <div class="card">
+    <div>
+        <h1>Volume Tabung</h1>
+    </div>
+    <img src="/assets/volumetabungacad.png" alt="" width="800" height="500">
+    <div>
+        <h3>Dengan:</h3>
+        <p>V = Volume Tabung</p>
+        <p>π = Phi (3,14)</p>
+        <p>r = Jari-jari</p>
+        <p>t = tinggi </p>
+    </div>
+<!--hitung volume tabung-->
+<div class ="form-hitung">
+<h1>Hitung volume tabung</h1>
+<form onsubmit="return tube_volume" action="" class="form-triangle" id="tube_volume">
+    <br>
+    <label> r </label>
+    <input id ="r" name ="r" type="number">
+    <label> t </label>
+    <input id ="tb" name ="tb" type="number">
+    <button type="submit" onclick="return tube_volume()">calculate</button>
+    <br>
+    <span> Volume tabung = <span id="result-tube-volume" span class="resultjj"> </span></span>
+    <br>
+</form>
+<button type="reset" class="reset-button" onclick="reset5()">reset</button>
+<br>
+<br>
+<a href="#Top" class="reset-button">back to top</a>
+</div>
+</div>
+</section>
+
+    </main>
+</main>
+<!--Footer-->
+<footer>Copyright © 2023 | Atha Syandana Firdaus Safa</footer>
+</body>
+</html>

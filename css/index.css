@@ -1,0 +1,79 @@
+body {background-color: #ebd4b4;
+padding: 10px; scroll-behavior: smooth;}
+h1 {color: #77502d;
+font-family: verdana;}
+h2 {color: #86B049;
+    font-family: verdana;
+text-align: center;}
+h4 {color: #86B049;
+        font-family: verdana;}
+h5 {color: #86B049;
+            font-family: verdana;}
+h3 {color: #77502d;
+    font-family: verdana;}
+p {color: #77502d;
+font-family: sans-serif;}
+
+.title{margin-top: 20px;
+text-align: center;}
+
+.paragraf{margin: 10 px 0 px;
+text-align: center;}
+
+.pilihan{display: flex;
+flex-direction: column;
+align-items: center;}
+.pilihan > a {text-decoration: none;}
+.pilihan-triangle {text-decoration: none;
+background-color: #3f2d1e;
+color:#ebd4b4;
+padding: 10px 0px;
+width: 80%;
+text-align: center;
+border-radius: 5px;}
+
+.pilihan-jajargenjang {text-decoration: none;
+    background-color:#77502d;
+    color:#ebd4b4;
+    padding: 10px 0px;
+    width: 80%;
+    text-align: center;
+    border-radius: 5px;}
+
+.pilihan-tabung {text-decoration: none;
+    background-color:#3f2d1e;
+    color:#ebd4b4;
+    padding: 10px 0px;
+    width: 80%;
+    text-align: center;
+    border-radius: 5px;}
+
+    main{display: flex; flex-direction: column; gap: 150px;}
+.card{border: 1px #77502d;
+padding: 20px;
+box-shadow: -1px 9px 35px 4px rgba(0,0,0,0.64);
+-webkit-box-shadow: -1px 9px 35px 4px rgba(0,0,0,0.64);
+-moz-box-shadow: -1px 9px 35px 4px rgba(0,0,0,0.64);;}
+
+.gambarsegitiga{align-items: center;}
+
+.form-triangle{display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+gap: 10px;
+box-shadow: -1px 9px 35px 4px rgba(0,0,0,0.64);
+-webkit-box-shadow: -1px 9px 35px 4px rgba(0,0,0,0.64);
+-moz-box-shadow: -1px 9px 35px 4px rgba(0,0,0,0.64);;
+width: 50%;}
+
+.resultjj {color:#3f2d1e; size: 12px;}
+
+.reset-button {text-decoration: none;
+    background-color: #3f2d1e;
+    color:#ebd4b4;
+    padding: 10px 0px;
+    width: 20%;
+    text-align: center;
+    border-radius: 5px;}
+footer{color:aliceblue}
